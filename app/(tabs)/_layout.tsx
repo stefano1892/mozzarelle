@@ -31,6 +31,13 @@ export default function TabLayout() {
         options={{
           title: 'Homepage',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+          tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveBackgroundColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveTintColor: Colors[colorScheme ?? 'light'].inactiveIconColor,
+          headerStyle: {
+            backgroundColor: Colors[colorScheme ?? 'light'].tint,
+          },
+          headerTintColor: Colors[colorScheme ?? 'light'].userIconTopBar,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -38,7 +45,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="user-circle"
                     size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
+                    color={Colors[colorScheme ?? 'light'].userIconTopBar}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
@@ -52,6 +59,13 @@ export default function TabLayout() {
         options={{
           title: 'Prodotti',
           tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
+          tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveBackgroundColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveTintColor: Colors[colorScheme ?? 'light'].inactiveIconColor,
+          headerStyle: {
+            backgroundColor: Colors[colorScheme ?? 'light'].tint,
+          },
+          headerTintColor: Colors[colorScheme ?? 'light'].userIconTopBar,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -59,7 +73,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="user-circle"
                     size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
+                    color={Colors[colorScheme ?? 'light'].userIconTopBar}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
@@ -73,6 +87,13 @@ export default function TabLayout() {
         options={{
           title: 'Ordini passati',
           tabBarIcon: ({ color }) => <TabBarIcon name="rotate-left" color={color} />,
+          tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveBackgroundColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveTintColor: Colors[colorScheme ?? 'light'].inactiveIconColor,
+          headerStyle: {
+            backgroundColor: Colors[colorScheme ?? 'light'].tint,
+          },
+          headerTintColor: Colors[colorScheme ?? 'light'].userIconTopBar,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -80,7 +101,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="user-circle"
                     size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
+                    color={Colors[colorScheme ?? 'light'].userIconTopBar}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
@@ -94,6 +115,13 @@ export default function TabLayout() {
         options={{
           title: 'Carrello',
           tabBarIcon: ({ color }) => <TabBarIcon name="shopping-cart" color={color} />,
+          tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveBackgroundColor: Colors[colorScheme ?? 'light'].tint,
+          tabBarInactiveTintColor: Colors[colorScheme ?? 'light'].inactiveIconColor,
+          headerStyle: {
+            backgroundColor: Colors[colorScheme ?? 'light'].tint,
+          },
+          headerTintColor: Colors[colorScheme ?? 'light'].userIconTopBar,
           tabBarBadge: 14,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -102,7 +130,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="user-circle"
                     size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
+                    color={Colors[colorScheme ?? 'light'].userIconTopBar}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
